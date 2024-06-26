@@ -1,5 +1,6 @@
-﻿﻿string[] array1 = new string[7] {"23", "   ", "hello", "world", "res", "ghyt", " / "};
+﻿string[] array1 = new string[7] {"23", "   ", "hello", "world", "res", "ghyt", " / "};
 string[] array2 = new string[array1.Length];
+
 void SecondArrayWithIF(string[] array1, string[] array2)
 {
     int count = 0;
@@ -13,3 +14,13 @@ void SecondArrayWithIF(string[] array1, string[] array2)
     }
 }
 
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+SecondArrayWithIF(array1, array2);
+PrintArray(array2);
